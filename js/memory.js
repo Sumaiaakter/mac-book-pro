@@ -35,7 +35,7 @@ document.getElementById('memory-input2').addEventListener('click', function () {
 
 // bonus section
 document.getElementById('apply').addEventListener('click', function () {
-    promoCode(true);
+    promoCode();
 
 
 
@@ -44,14 +44,7 @@ function promoCode() {
     let stevenkaku = 1399;
     let tax = .2;
     document.getElementById('offer').value = stevenkaku - (stevenkaku * tax);
-    if (stevenkaku == 1399) {
-        const discount = stevenkaku * tax;
-        total = (stevenkaku) - (discount);
 
-    }
-    else {
-        'offer time is overed';
-    }
 
 }
 
