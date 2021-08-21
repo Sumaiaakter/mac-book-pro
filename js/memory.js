@@ -10,15 +10,13 @@ document.getElementById('memory-input').addEventListener('click', function () {
 
 });
 
-// function apply
-
 document.getElementById('memory-input2').addEventListener('click', function () {
     let previousCost1 = 180;
     const memoryCost = document.getElementById('memory-cost');
     const totalMemoryCost = memoryCost.innerText;
     memoryCost.innerText = parseInt(previousCost1);
     previousCost1 = totalMemoryCost;
-    return previousCost1;
+    // return previousCost1;
 
 
 
@@ -37,12 +35,25 @@ document.getElementById('memory-input2').addEventListener('click', function () {
 
 // bonus section
 document.getElementById('apply').addEventListener('click', function () {
-    let stevenkaku = 1399;
-    let tax = .2;
-    document.getElementById('offer').value = (stevenkaku) * (tax);
+    promoCode(true);
+
 
 
 })
+function promoCode() {
+    let stevenkaku = 1399;
+    let tax = .2;
+    document.getElementById('offer').value = stevenkaku - (stevenkaku * tax);
+    if (stevenkaku == 1399) {
+        const discount = stevenkaku * tax;
+        total = (stevenkaku) - (discount);
+
+    }
+    else {
+        'offer time is overed';
+    }
+
+}
 
 
 
