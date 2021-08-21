@@ -37,9 +37,9 @@ document.getElementById('memory-input2').addEventListener('click', function () {
 
 // bonus section
 document.getElementById('apply').addEventListener('click', function () {
-    let steven = 20000;
+    let stevenkaku = 1399;
     let tax = .2;
-    document.getElementById('offer').value = (steven) * (tax);
+    document.getElementById('offer').value = (stevenkaku) * (tax);
 
 
 })
