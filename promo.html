@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="bg-goldenrod-100 w-3/4 mx-auto mt-8 p-8">
+        <h3 class="text-2xl mb-4">Please Login</h3>
+        <div>
+            <input id="user-email" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="text" name=""
+                id="" placeholder="email">
+            <input id="user-password" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="password"
+                name="" id="" placeholder="password">
+            <button id="login-submit" class="bg-yellow-600 px-4 rounded text-white font-medium">submit</button>
+
+        </div>
+    </section>
+    <script>
+        document.getElementById('login-submit').addEventListener('click', function () {
+            const emailField = document.getElementById('user-email');
+            const userEmail = emailField.value;
+            // console.log('userEmail');
+
+            const passwordField = document.getElementById('user-password');
+            const userPassword = passwordField.value;
+            // console.log('userPassword');
+
+            if (userEmail == 'steven@kaku.com' && userPassword == 'secret') {
+                // console.log('valid user');
+                window.location.href = 'index.html';
+            }
+
+        })
+    </script>
+    <!-- <script src="js/memory.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/delivery.js"></script>
+    <script src="js/total.js"></script> -->
+</body>
+
+</html>
